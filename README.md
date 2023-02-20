@@ -1,6 +1,8 @@
 # Bellabeat_Case_Study
 Google Data Analytics Capstone Project
 --SQL Queries 
+[Dataset](https://www.kaggle.com/datasets/arashnic/fitbit)
+
 --To validate user id length consistency 
 
 Select LENGTH(CAST(Id AS STRING)) 
