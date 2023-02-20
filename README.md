@@ -84,6 +84,7 @@ FROM `bellabeat-378316.Bellabeat.Weight_Log`
 --8 users for this table
 
 --left join to join all 5 tables by user ID’s
+
 SELECT a.Id, AVG(a.TotalDistance) AS total_distance,
 AVG(a.LoggedActivitiesDistance) AS logged_activity,
 AVG(b.Calories) AS calories,
@@ -100,6 +101,8 @@ AS a LEFT JOIN `bellabeat-378316.Bellabeat.Daily_Calories`
  LEFT JOIN `bellabeat-378316.Bellabeat.Weight_Log`
  AS e ON a.Id = e.Id
  GROUP BY a.Id;
+ 
+ --Unique user ID's are consistent across all tables and null values are due to certain features not being utilized. 
 
 
 
