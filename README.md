@@ -63,7 +63,7 @@ WHERE LENGTH(CAST(Id AS STRING)) < 10
 Select
 DISTINCT Id
 FROM `bellabeat-378316.Bellabeat.Daily_Activity`
---33 users for this table
+--33 users for this table, only 4 with activity over 0.00
 
 Select
 DISTINCT Id
